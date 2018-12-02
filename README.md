@@ -1,6 +1,6 @@
 [//]: # (Image References)
 
-[image1]: https://user-images.githubusercontent.com/10624937/43851024-320ba930-9aff-11e8-8493-ee547c6af349.gif "Trained Agent"
+[image1]: https://github.com/JesperEsbensen/drlnd_collaboration_and_competition_project/blob/master/tennis.png "Tennis game"
 
 
 # Project 3: Collaboration and competition.
