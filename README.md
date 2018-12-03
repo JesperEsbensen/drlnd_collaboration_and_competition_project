@@ -4,16 +4,16 @@
 Created by Jesper Højmark Esbensen, 2018-11-11.<br>
 <br>
 
-This note book will create and train an agent to follow a boble target in the Unity Machine Learning environment Reacher. The solution is based on the general deep reenforcement learning agent supplied in the course [Deep Reinforcement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893).
+This project will create and train two agents in a Unity Machine Learning environment to play Tennis. The solution is based on the general deep reenforcement learning agent supplied in the course [Deep Reinforcement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893).
 
 <img src="Tennis.png" alt="Tennis Environment" width="500" align="middle"/>
 
-The environment is a robot arm with at spherical target moving around it in a circle. The agent can control the arm with 4 continuous actions. The robot arm gets a reward when the arm touches the sphere. The task is to move the robot arm so it follows the sphere. When a score of more that 30 has been reached, calculated as an average over 100 episods the environment is considdered solved.<br>
+The environment is a tennis court where two tennis players play with each other. The agent can move closer or further way from the net and jum. Two continouos actions. When a player hits the ball over the net it is rewarded with 0.1 points. When the player drops the ball or shoots it out of bounds a reward of -0.01 is given. The setup will result in two players playing with each other to get a high score and therefor playing as long as possible, The environment is solved when an average score over 100 episodes is reached. The score pr game is taken as the highes of the two players score.<br>
 
 
 ### 1. Installation instructions
 
-The robot arm is living in a Unity environment and the agent solving it is a pytorch script run in a Jupyter notebook. Therefore running it will need some setup of tools and environment.
+The playground is a Unity environment and the agents solving it are build in the pytorch/python script in this repository. The scripts is run in a Jupyter notebook. Therefore running it will need some setup of tools and environment.
 
 You will need to install python 3.6 and a few packages. One popular way to install python is through Anaconda. A python/R environment. To install this follow the instructions on: https://www.anaconda.com/distribution/.
 
@@ -48,13 +48,13 @@ find and change to the directory: ml-agents/python and install the ml-agenst wit
 or reference this page if you have problems: https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation-Windows.md
 
 
-### 2. Clone the "Reacher agent" project
+### 2. Clone the "Tennis game" project
 
 To download this repository and run the reacher agent on your machine clone this github repository with the following command:
 
-    git clone https://github.com/JesperEsbensen/drlnd-continuous-control.git
+    git clone https://github.com/JesperEsbensen/drlnd_collaboration_and_competition_project
 
-when cloned unpack the Reacher_Windows_x86_64/Reacher_Windows_x86_64_20Agents in the same location so you get a subfolder: Reacher_Windows_x86_64. If you unpack the environment in a different location you will need to change the path to the environment in the notebook accordingly.
+when cloned unpack the Tennis_Windows_x86_64 in the same location so you get a subfolder: Tennis_Windows_x86_64. If you unpack the environment in a different location you will need to change the path to the environment in the notebook accordingly.
 
 ### 3. Train the agent
 
