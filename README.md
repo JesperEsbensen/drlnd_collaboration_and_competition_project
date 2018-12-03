@@ -1,4 +1,4 @@
-# Reacher - robot arm controler
+# Tennis game
 
 ---
 Created by Jesper Højmark Esbensen, 2018-12-03.<br>
@@ -6,7 +6,7 @@ Created by Jesper Højmark Esbensen, 2018-12-03.<br>
 
 This project will create and train two agents in a Unity Machine Learning environment to play Tennis. The solution is based on the general deep reenforcement learning agent supplied in the course [Deep Reinforcement Learning Nanodegree](https://www.udacity.com/course/deep-reinforcement-learning-nanodegree--nd893).
 
-<img src="" alt="tennis Environment" width="500" align="middle"/>
+<img src="tennis.png" alt="Tennis Environment" width="500" align="middle"/>
 
 The environment is a tennis court where two tennis players play with each other. The agent can move closer or further way from the net and jum. Two continouos actions. When a player hits the ball over the net it is rewarded with 0.1 points. When the player drops the ball or shoots it out of bounds a reward of -0.01 is given. The setup will result in two players playing with each other to get a high score and therefor playing as long as possible, The environment is solved when an average score over 100 episodes is reached. The score pr game is taken as the highes of the two players score.<br>
 
