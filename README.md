@@ -8,7 +8,7 @@ This project will create and train two agents in a Unity Machine Learning enviro
 
 <img src="tennis.png" alt="Tennis Environment" width="500" align="middle"/>
 
-The environment is a tennis court where two tennis players play with each other. The agent can move closer or further way from the net and jum. Two continouos actions. When a player hits the ball over the net it is rewarded with 0.1 points. When the player drops the ball or shoots it out of bounds a reward of -0.01 is given. The setup will result in two players playing with each other to get a high score and therefor playing as long as possible, The environment is solved when an average score over 100 episodes is reached. The score pr game is taken as the highes of the two players score.<br>
+The environment is a tennis court where two tennis players play with each other. The agent can move closer or further way from the net and jump. Two continouos actions. When a player hits the ball over the net it is rewarded with 0.1 points. When the player drops the ball or shoots it out of bounds a reward of -0.01 is given. The setup will result in two players playing with each other to get a high score and therefor playing as long as possible, The environment is solved when an average score over 100 episodes is reached. The score pr game is taken as the highes of the two players score.<br>
 
 
 ### 1. Installation instructions
